@@ -1,7 +1,7 @@
-int LEDPin = 13;
+int LedPin = 13;
 
 void setup() {
-  PinMOde(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
 
 }
 
@@ -29,7 +29,7 @@ void loop() {
 void flash(int time) {
   digitalWrite(ledPin, HIGH);
   delay(time);
-  digitalWrite(ledPin, LOw);
+  digitalWrite(ledPin, LOW);
   delay(time);
   
 }
